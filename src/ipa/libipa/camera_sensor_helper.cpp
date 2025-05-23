@@ -745,6 +745,17 @@ public:
 };
 REGISTER_CAMERA_SENSOR_HELPER("ov13858", CameraSensorHelperOv13858)
 
+
+class CameraSensorHelperVd55G1 : public CameraSensorHelper
+{
+public:
+	CameraSensorHelperVd55G1()
+	{
+		gain_ = AnalogueGainLinear{ 1, 0, 0, 128 };
+	}
+};
+REGISTER_CAMERA_SENSOR_HELPER("vd55g1", CameraSensorHelperVd55G1)
+
 #endif /* __DOXYGEN__ */
 
 } /* namespace ipa */
