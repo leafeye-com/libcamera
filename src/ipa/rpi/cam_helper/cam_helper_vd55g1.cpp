@@ -5,25 +5,25 @@
  * camera helper for imx477 sensor
  */
 
-#include <algorithm>
+//#include <algorithm>
 #include <assert.h>
-#include <cmath>
-#include <stddef.h>
-#include <stdio.h>
-#include <stdlib.h>
+//#include <cmath>
+//#include <stddef.h>
+//#include <stdio.h>
+//#include <stdlib.h>
 
-#include <libcamera/base/log.h>
+//#include <libcamera/base/log.h>
 
 #include "cam_helper.h"
 //#include "md_parser.h"
 
 using namespace RPiController;
-using namespace libcamera;
-using libcamera::utils::Duration;
+//using namespace libcamera;
+//using libcamera::utils::Duration;
 
-namespace libcamera {
-LOG_DECLARE_CATEGORY(IPARPI)
-}
+//namespace libcamera {
+//LOG_DECLARE_CATEGORY(IPARPI)
+//}
 
 
 /*
@@ -115,4 +115,4 @@ static CamHelper *create()
 	return new CamHelperVd55G1();
 }
 
-static RegisterCamHelper reg("vd55g1_mono", &create);
+static RegisterCamHelper reg("vd55g1", &create);
