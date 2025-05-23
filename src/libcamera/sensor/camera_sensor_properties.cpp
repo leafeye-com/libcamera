@@ -466,6 +466,14 @@ const CameraSensorProperties *CameraSensorProperties::get(const std::string &sen
 			},
 			.sensorDelays = { },
 		} },
+		{ "vd55g1", {
+			.unitCellSize = { 800, 700 },
+			.testPatternModes = {
+				{ controls::draft::TestPatternModeOff, 0 },
+				{ controls::draft::TestPatternModeColorBars, 1 },
+			},
+			.sensorDelays = {},
+		} },
 	};
 
 	const auto it = sensorProps.find(sensor);
